@@ -1,5 +1,7 @@
 ###Enumeration
 
 #Định nghĩa
+
 Enumeration định nghĩa 1 nhóm các giá trị có liên quan đến nhau và cho phép bạn làm việc với những giá trị đó 1 cách an toàn trong code của bạn
+
 Nếu bạn quen với C, bạn sẽ biết rằng Enumeration trong C gán các cái tên có liên quan cho một tập hợp các giá trị Integer.
