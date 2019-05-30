@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CityWeatherCell" customModule="WeatherAppStrat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="654"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="654"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-1" translatesAutoresizingMaskIntoConstraints="NO" id="XLz-Hq-v6V">
+                        <rect key="frame" x="0.0" y="0.0" width="384" height="654"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Few clouds" translatesAutoresizingMaskIntoConstraints="NO" id="q98-zd-izA">
+                        <rect key="frame" x="144" y="142" width="96" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="Qbg-Vy-ejm"/>
+                            <constraint firstAttribute="width" constant="96" id="fOh-x8-pSe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccv-p7-L41">
+                        <rect key="frame" x="130" y="286" width="124" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="124" id="vBT-QN-A1R"/>
+                            <constraint firstAttribute="height" constant="120" id="whB-qb-Szt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raA-JE-los">
+                        <rect key="frame" x="115.5" y="473" width="153" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="City Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsN-6m-4hJ">
+                        <rect key="frame" x="42" y="63" width="300" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="NNc-72-2GQ"/>
+                            <constraint firstAttribute="width" constant="300" id="iLp-qX-SNq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XLz-Hq-v6V" secondAttribute="trailing" id="30y-Wl-hqj"/>
+                <constraint firstItem="XLz-Hq-v6V" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7Us-Xl-1yR"/>
+                <constraint firstItem="TsN-6m-4hJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="CWo-MZ-inu"/>
+                <constraint firstItem="q98-zd-izA" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Icp-RO-727"/>
+                <constraint firstItem="XLz-Hq-v6V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="X9S-BE-sdR"/>
+                <constraint firstItem="ccv-p7-L41" firstAttribute="top" secondItem="q98-zd-izA" secondAttribute="bottom" constant="16" id="Zup-zG-7lr"/>
+                <constraint firstItem="raA-JE-los" firstAttribute="top" secondItem="ccv-p7-L41" secondAttribute="bottom" constant="67" id="bt1-yX-YV8"/>
+                <constraint firstItem="q98-zd-izA" firstAttribute="top" secondItem="TsN-6m-4hJ" secondAttribute="bottom" constant="22" id="cdX-Wg-npY"/>
+                <constraint firstAttribute="bottom" secondItem="XLz-Hq-v6V" secondAttribute="bottom" id="erO-yN-rrS"/>
+                <constraint firstItem="raA-JE-los" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fI8-ls-gQU"/>
+                <constraint firstItem="TsN-6m-4hJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="60" id="hcV-ia-LPU"/>
+                <constraint firstItem="ccv-p7-L41" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wHH-h3-IuF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="384" height="654"/>
+            <connections>
+                <outlet property="cityNameLabel" destination="TsN-6m-4hJ" id="a4Z-Co-9iw"/>
+                <outlet property="currentDegreeLabel" destination="ccv-p7-L41" id="12f-zn-ZM0"/>
+                <outlet property="decsriptionLabel" destination="raA-JE-los" id="Z3N-2C-c4V"/>
+                <outlet property="wetherBgImageView" destination="XLz-Hq-v6V" id="viv-xg-3ns"/>
+                <outlet property="wetherIconImageView" destination="q98-zd-izA" id="9vs-Ov-d98"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="119.19642857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Background-1" width="300" height="500"/>
+        <image name="Few clouds" width="104" height="94"/>
+    </resources>
+</document>
