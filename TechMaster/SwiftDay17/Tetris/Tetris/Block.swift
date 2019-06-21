@@ -5,7 +5,7 @@
 //  Created by apple on 6/13/19.
 //  Copyright © 2019 Hào. All rights reserved.
 //
-
+// Phần này Hào comment ok đấy.
 import UIKit
 
 class Block: UIView {
@@ -13,18 +13,15 @@ class Block: UIView {
     var blockLayer: CAShapeLayer!
     var radius: CGFloat = 0.0
     var fillColor: UIColor!
-    var vtx : Int!
-    var vty : Int!
 
     convenience init(_center: CGPoint, _radius: CGFloat, _fillColor: UIColor) {
-        self.init(frame: CGRect(x: _center.x, y: _center.y, width: _radius, height: _radius))
+        self.init(frame: CGRect(x: _center.x, y: _center.y, width: _radius * 2.0, height: _radius * 2.0))
         // set giá trị _radius và _fillColor chuyền vào cho biến radius và fillColor bên ngoài
         self.radius = _radius
         self.fillColor = _fillColor
-        self.alpha = 1
-    
+        self.alpha = 100
     }
-    //hàn này dùng để vẽ nên vật thể
+    // hàn này dùng để vẽ nên vật thể
     override func draw(_ rect: CGRect) {
         // bắt buộc phải gọi super.draw(rect)
         super.draw(rect)
@@ -35,9 +32,7 @@ class Block: UIView {
             blockLayer.path = UIBezierPath(roundedRect: CGRect(x: 0.0, y: 0.0, width: self.frame.width, height: self.frame.height), cornerRadius: 0).cgPath
             // đổ màu cho blockLayer và đuôi .cgColor
             blockLayer.fillColor = fillColor.cgColor
-            // phải add vào sublayer nó mới hiển thị được
-            self.layer.addSublayer(blockLayer)
-
+            
             // khởi tạo biến chiều rộng của khối để vẽ chi tiết bên trong khối
             let width = self.frame.width
             // biến bo góc (góc bo bằng 1/10 chiều rộng của khối)
@@ -59,7 +54,7 @@ class Block: UIView {
             topLayer.fillColor = UIColor.white.cgColor
             // insert vào block
             blockLayer.insertSublayer(topLayer, at: 0)
-
+            
             // xoá đường kẻ cũ
             line.removeAllPoints()
             // vẽ các cạnh khác
@@ -74,7 +69,7 @@ class Block: UIView {
             rightLayer.opacity = 0.4
             rightLayer.fillColor = UIColor.brown.cgColor
             blockLayer.insertSublayer(rightLayer, at: 0)
-
+            
             //bên trái
             line.removeAllPoints()
             let leftLayer = CAShapeLayer()
@@ -87,7 +82,7 @@ class Block: UIView {
             leftLayer.opacity = 0.4
             leftLayer.fillColor = UIColor.brown.cgColor
             blockLayer.insertSublayer(leftLayer, at: 0)
-
+            
             //bên dưới
             line.removeAllPoints()
             let bottomLayer = CAShapeLayer()
@@ -101,7 +96,7 @@ class Block: UIView {
             bottomLayer.fillColor = UIColor.brown.cgColor
             blockLayer.insertSublayer(bottomLayer, at: 0)
         }
-
+        
     }
 
 }

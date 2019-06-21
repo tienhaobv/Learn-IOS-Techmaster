@@ -10,33 +10,32 @@ import UIKit
 
 class MainScreen: UIViewController {
     
-    var arBlock = Set<Block>()
-//    var arrayHint = [[Int]]()
+    var arrayHint = [[Int]]()
     var columnHint = 10
-    var rowHint = 22
+    var rowHint = 22 //Con số 22 này lấy ở đâu ra thế?
     var margin : CGFloat = 2.0
-    var blockHint = [[BlockHint]]()
+    var blockHint = [[BlockHint]]()  // Hiddent chứ không là Hint anh nhé
     var groupBlock: UIView!
     var timer: Timer!
     var sizeMoveBlock: CGFloat = 0.0
-//    var minColumnX = 0.0
-    var minColumnY : CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // đổi màu backgroud
         self.view.backgroundColor = .black
-        // gọi hàm tạo mảng hint
         createBlockHint()
+        groupBlock = UIView()
+        // Đoạn code này quá rồi. Thầy đọc chả hiều gì :(
+        groupBlock.frame = CGRect(x: blockHint[1][columnHint/2 - 1].frame.origin.x, y: blockHint[1][columnHint/2 - 1].frame.origin.y, width: blockHint[1][columnHint/2-1].bounds.width, height: blockHint[1][columnHint/2-1].bounds.height * 3 + margin * 2)
+        
         
         sizeMoveBlock = blockHint[1][columnHint/2-1].bounds.height + margin
-        
+        groupBlock.backgroundColor = .green
+        groupBlock.alpha = 0.5
+        view.addSubview(groupBlock)
         drawI(size: sizeMoveBlock)
-        
-        // in ra tất cả thằng con của thằng groupBlock
-        // print(groupBlock.subviews.count)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(moveGroupBlock), userInfo: nil, repeats: true)
     }
-    // tạo ra mảng Hint bên dưới và căn chỉnh cho vào giữa màn hình
+    
     func createBlockHint() {
         let sizeBlockHint = CGFloat.minimum((view.bounds.height - 60 - CGFloat(rowHint+1) * margin) / CGFloat(rowHint), (view.bounds.height - CGFloat(columnHint+1) * margin) / CGFloat(columnHint))
         let maginWidth = view.bounds.width - (sizeBlockHint * CGFloat(columnHint) + CGFloat(columnHint+1) * margin)
@@ -47,12 +46,10 @@ class MainScreen: UIViewController {
         if maginWidth == maxMagin {
             isWidth = true
         }
-        
+        // Nếu anh gửi code này cho đồng nghiệp, sau đó anh chuyển công ty khác thì thằng đồng nghiệp của anh chắc chết !
         for i in 0..<rowHint {
             var blockHintRow = [BlockHint]()
-//            var arSubBlock = Array<Int>()
             for j in 0..<columnHint {
-//                arSubBlock.append(0)
                 let subBlockHint = BlockHint()
                 if isWidth {
                     subBlockHint.frame = CGRect(x: maxMagin/2 + margin * CGFloat(j + 1) + sizeBlockHint * CGFloat(j),
@@ -68,42 +65,18 @@ class MainScreen: UIViewController {
                 }
                 //subBlockHint.backgroundColor = .gray
                 //subBlockHint.alpha = 40
-                subBlockHint.type = 3
+                subBlockHint.type = 1
                 subBlockHint.setTypeColor()
                 view.addSubview(subBlockHint)
                 blockHintRow.append(subBlockHint)
             }
-//            arBlock.append(arSubBlock)
             blockHint.append(blockHintRow)
         }
         
-        var count = 0
-        for i in blockHint
-        {
-            count += 1
-            i[0].type = 1
-            i[0].setTypeColor()
-            i[i.count-1].type = 1
-            i[i.count-1].setTypeColor()
-            if count == blockHint.count {
-                for j in 1..<i.count-1 {
-                    i[j].type = 1
-                    i[j].setTypeColor()
-                }
-            }
-            
-        }
-        
     }
-    
+    //Vẽ khối gạch chữ I
+    //Cách này phức tạp hơn cần thiết. Hãy định nghĩa sẵn ra màng.
     func drawI(size: CGFloat){
-        // tạo ra groupBlock để chứa những thằng block con rơi xuống
-        groupBlock = UIView()
-        groupBlock.frame = CGRect(x: blockHint[1][columnHint/2 - 1].frame.origin.x, y: blockHint[1][columnHint/2 - 1].frame.origin.y, width: blockHint[1][columnHint/2-1].bounds.width, height: blockHint[1][columnHint/2-1].bounds.height * 3 + margin * 2)
-        groupBlock.backgroundColor = .green
-        groupBlock.alpha = 0.5
-        view.addSubview(groupBlock)
-        //tạo ra những khổi block con bên trong
         for i in 0...2{
             if i == 1 {
                 for j in 0...2 {
@@ -111,35 +84,17 @@ class MainScreen: UIViewController {
                 }
             }
         }
-        minColumn(column: columnHint/2 - 1)
-        // hàm gọi di chuyển khối groupBlock
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(groupBlockLoop), userInfo: nil, repeats: true)
     }
     
+    // Cách làm của anh chả có tý gì là hướng đối tượng cả. Nó chân phương quá!
     func drawBlock(col: Int, row: Int, radius: CGFloat) {
-        let block = Block(_center: CGPoint(x: CGFloat(col + 1), y: radius * CGFloat(row)), _radius: radius, _fillColor: UIColor.orange)
-        block.vtx = columnHint/2 - 1
-        block.vty = row
-        arBlock.insert(block)
+        let block = Block(_center: CGPoint(x: radius * CGFloat(col + 1), y: radius * 2 * CGFloat(row)), _radius: radius, _fillColor: UIColor.orange)
         groupBlock.addSubview(block)
     }
     
-    @objc func groupBlockLoop(){
+    //Trong ứng dụng game có một hàm gọi là gameloop, anh cứ đặt tên GameLoop cho thầy nhé.
+    @objc func moveGroupBlock(){
         groupBlock.frame.origin.y += sizeMoveBlock
-        for i in arBlock {
-            if i.frame.origin.y >= minColumnY {
-                timer.invalidate()
-                drawI(size: sizeMoveBlock)
-                break
-            }
-        }
-    }
-    func minColumn (column: Int) {
-        for i in blockHint  {
-            if i[column].type != 3 {
-                minColumnY = i[column].frame.origin.y - sizeMoveBlock
-            }
-        }
     }
     
 }
