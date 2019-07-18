@@ -16,11 +16,14 @@
 		18057AF222BDD3BA002FA678 /* MemoryGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18057AF122BDD3BA002FA678 /* MemoryGameUITests.swift */; };
 		18057B0022BDDC10002FA678 /* CardsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18057AFF22BDDC10002FA678 /* CardsImageView.swift */; };
 		18057B0422BDF870002FA678 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18057B0322BDF870002FA678 /* FlipView.swift */; };
-		18365C6322C480380064361F /* turnpage.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18365C1E22C480310064361F /* turnpage.wav */; };
-		18365C6B22C480380064361F /* youwin_g3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 18365C2622C480320064361F /* youwin_g3.m4a */; };
-		18365C7422C480380064361F /* t_thuacuoc_hc.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 18365C2F22C480330064361F /* t_thuacuoc_hc.m4a */; };
-		18365C7522C480380064361F /* touch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18365C3022C480330064361F /* touch.wav */; };
 		18D6B4DC22CDEB4000E4E151 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6B4DB22CDEB4000E4E151 /* NewViewController.swift */; };
+		18F5ACE022D5A36300B9B777 /* auFalse.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 18F5ACDF22D5A36300B9B777 /* auFalse.m4a */; };
+		18F5ACE322D5A3A600B9B777 /* auTrue.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 18F5ACE222D5A3A600B9B777 /* auTrue.m4a */; };
+		18F5ACF022D5A47600B9B777 /* turnpage.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18F5ACEC22D5A47600B9B777 /* turnpage.wav */; };
+		18F5ACF122D5A47600B9B777 /* youwin_g3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 18F5ACED22D5A47600B9B777 /* youwin_g3.m4a */; };
+		18F5ACF222D5A47600B9B777 /* t_thuacuoc_hc.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 18F5ACEE22D5A47600B9B777 /* t_thuacuoc_hc.m4a */; };
+		18F5ACF322D5A47600B9B777 /* touch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18F5ACEF22D5A47600B9B777 /* touch.wav */; };
+		18F5ACF522D5A4A800B9B777 /* music1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18F5ACF422D5A4A800B9B777 /* music1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +59,15 @@
 		18057AF322BDD3BA002FA678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18057AFF22BDDC10002FA678 /* CardsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsImageView.swift; sourceTree = "<group>"; };
 		18057B0322BDF870002FA678 /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
-		18365C1E22C480310064361F /* turnpage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = turnpage.wav; sourceTree = "<group>"; };
-		18365C2622C480320064361F /* youwin_g3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = youwin_g3.m4a; sourceTree = "<group>"; };
-		18365C2F22C480330064361F /* t_thuacuoc_hc.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = t_thuacuoc_hc.m4a; sourceTree = "<group>"; };
-		18365C3022C480330064361F /* touch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = touch.wav; sourceTree = "<group>"; };
+		180A2F2122DC82B600404F66 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18D6B4DB22CDEB4000E4E151 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		18F5ACDF22D5A36300B9B777 /* auFalse.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = auFalse.m4a; sourceTree = "<group>"; };
+		18F5ACE222D5A3A600B9B777 /* auTrue.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = auTrue.m4a; sourceTree = "<group>"; };
+		18F5ACEC22D5A47600B9B777 /* turnpage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = turnpage.wav; sourceTree = "<group>"; };
+		18F5ACED22D5A47600B9B777 /* youwin_g3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = youwin_g3.m4a; sourceTree = "<group>"; };
+		18F5ACEE22D5A47600B9B777 /* t_thuacuoc_hc.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = t_thuacuoc_hc.m4a; sourceTree = "<group>"; };
+		18F5ACEF22D5A47600B9B777 /* touch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = touch.wav; sourceTree = "<group>"; };
+		18F5ACF422D5A4A800B9B777 /* music1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = music1.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +98,7 @@
 		18057AC522BDD3B8002FA678 = {
 			isa = PBXGroup;
 			children = (
+				180A2F2122DC82B600404F66 /* README.md */,
 				18057AD022BDD3B8002FA678 /* MemoryGame */,
 				18057AE522BDD3BA002FA678 /* MemoryGameTests */,
 				18057AF022BDD3BA002FA678 /* MemoryGameUITests */,
@@ -111,7 +119,7 @@
 		18057AD022BDD3B8002FA678 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
-				18365BF722C47FFE0064361F /* Sounds */,
+				18F5ACE122D5A37C00B9B777 /* Sound */,
 				18057AD122BDD3B8002FA678 /* AppDelegate.swift */,
 				18057AD322BDD3B8002FA678 /* ViewController.swift */,
 				18D6B4DB22CDEB4000E4E151 /* NewViewController.swift */,
@@ -143,15 +151,18 @@
 			path = MemoryGameUITests;
 			sourceTree = "<group>";
 		};
-		18365BF722C47FFE0064361F /* Sounds */ = {
+		18F5ACE122D5A37C00B9B777 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				18365C2F22C480330064361F /* t_thuacuoc_hc.m4a */,
-				18365C3022C480330064361F /* touch.wav */,
-				18365C1E22C480310064361F /* turnpage.wav */,
-				18365C2622C480320064361F /* youwin_g3.m4a */,
+				18F5ACF422D5A4A800B9B777 /* music1.wav */,
+				18F5ACEE22D5A47600B9B777 /* t_thuacuoc_hc.m4a */,
+				18F5ACEF22D5A47600B9B777 /* touch.wav */,
+				18F5ACEC22D5A47600B9B777 /* turnpage.wav */,
+				18F5ACED22D5A47600B9B777 /* youwin_g3.m4a */,
+				18F5ACDF22D5A36300B9B777 /* auFalse.m4a */,
+				18F5ACE222D5A3A600B9B777 /* auTrue.m4a */,
 			);
-			path = Sounds;
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,13 +269,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F5ACE022D5A36300B9B777 /* auFalse.m4a in Resources */,
+				18F5ACF122D5A47600B9B777 /* youwin_g3.m4a in Resources */,
+				18F5ACF222D5A47600B9B777 /* t_thuacuoc_hc.m4a in Resources */,
 				18057ADC22BDD3BA002FA678 /* LaunchScreen.storyboard in Resources */,
 				18057AD922BDD3BA002FA678 /* Assets.xcassets in Resources */,
-				18365C6322C480380064361F /* turnpage.wav in Resources */,
-				18365C7422C480380064361F /* t_thuacuoc_hc.m4a in Resources */,
+				18F5ACE322D5A3A600B9B777 /* auTrue.m4a in Resources */,
+				18F5ACF022D5A47600B9B777 /* turnpage.wav in Resources */,
 				18057AD722BDD3B8002FA678 /* Main.storyboard in Resources */,
-				18365C6B22C480380064361F /* youwin_g3.m4a in Resources */,
-				18365C7522C480380064361F /* touch.wav in Resources */,
+				18F5ACF522D5A4A800B9B777 /* music1.wav in Resources */,
+				18F5ACF322D5A47600B9B777 /* touch.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GQ2949C7U;
 				INFOPLIST_FILE = MemoryGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GQ2949C7U;
 				INFOPLIST_FILE = MemoryGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

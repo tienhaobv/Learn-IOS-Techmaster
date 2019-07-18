@@ -15,11 +15,12 @@ class CardsImageView: UIView {
     var isflip : Bool = false
     let imageSet = ["la-bai-1","la-bai-2","la-bai-3","la-bai-4"]
     var lock : Bool = false
-    let cardView = UIImageView(image: UIImage(named: "Mark"))
+    let cardView = UIImageView(image: UIImage(named: "mark-1"))
     var frontView: UIView?
     var backView: UIView?
-    private var isFlipped: Bool = false
+    private var isFlipped: Bool = true
     var flipStyleOption: UIView.AnimationOptions = .transitionFlipFromLeft
+    static var gameover : Bool = false
     
     init(_ idImage: Int, size: CGSize) {
         super.init(frame: CGRect.zero)
@@ -29,12 +30,17 @@ class CardsImageView: UIView {
         
         frontView = cardView
         backView = UIImageView(image: UIImage(named: imageSet[idImage]))
+//        xét hình scale bằng với cái view
+//        backView?.contentMode = .scaleToFill
+//        xoá bound bên ngoài của hình
+//        backView?.clipsToBounds = true
         frontView?.frame = CGRect(origin: CGPoint.zero, size: size)
         backView?.frame = CGRect(origin: CGPoint.zero, size: size)
         
         
         addSubview(backView!)
         addSubview(frontView!)
+        flip2()
 //          Đây là code tab lật cũ
 //        self.isUserInteractionEnabled = true
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(tabFun))
@@ -46,17 +52,19 @@ class CardsImageView: UIView {
     }
     // kiểm tra xem có click cùng vào một lá không(nếu có úp lá đó lại)
     @objc func tabFun() {
-        ViewController.playSound(name: "touch", type: "wav")
-        if !lock {
-            lock = true
-            flip()
-            
+        if CardsImageView.gameover == false {
+            ViewController.playSound(name: "touch", type: "wav")
+            if !lock {
+                lock = true
+                flip()
+                
+            }
+            else {
+                lock = false
+                flip2()
+            }
+            print(lock)
         }
-        else {
-            lock = false
-            flip2()
-        }
-        print(lock)
     }
     
     //hàm quay lá và check dữ liệu
@@ -100,7 +108,7 @@ class CardsImageView: UIView {
     }
     // hàm để quay úp lá bài và không check
     @objc func flip2() {
-        ViewController.playSound(name: "turnpage", type: "wav")
+        //ViewController.playSound(name: "turnpage", type: "wav")
         isFlipped = !isFlipped
         
         let cardToFlip = isFlipped ? frontView : backView
