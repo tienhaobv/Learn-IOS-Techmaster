@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CardsImageView: UIView {
 
@@ -14,6 +15,7 @@ class CardsImageView: UIView {
     var ID: Int = 0
     var isflip : Bool = false
     let imageSet = ["la-bai-1","la-bai-2","la-bai-3","la-bai-4"]
+    let name = ["chicken","bird","snake","pig"]
     var lock : Bool = false
     let cardView = UIImageView(image: UIImage(named: "mark-1"))
     var frontView: UIView?
@@ -104,6 +106,8 @@ class CardsImageView: UIView {
                                         ViewController.checkEat()
                                     }
                                 }
+                                //text to speech
+                                self.voiceFlag(name : self.name[self.type])
                             })
     }
     // hàm để quay úp lá bài và không check
@@ -131,6 +135,14 @@ class CardsImageView: UIView {
                             self.lock = false
         })
         
+    }
+    //text to speech
+    func voiceFlag(name : String){
+        let utterance = AVSpeechUtterance(string: name)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        utterance.rate = 0.5
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
     }
     
 }
