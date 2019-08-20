@@ -1,0 +1,12 @@
+Bài toán chia tiền:
+- Trong tháng 7 này, team iOS rủ nhau đi dã ngoại, cả team có 5 bạn. Cả team thống nhất với nhau rằng, mỗi người cứ chi cho team sau đó sẽ chia đều. 
++ Bạn A chi 700,000 VND
++ Bạn B chi 1,200,000 VND
++ Bạn C chi 78,000 VND
++ Bạn D chi 200,000 VND
++ Bạn E chi 1,500,000 VND
+
+Hãy viết ứng dụng chia tiền hộ team iOS để các bạn ấy không phải đau đầu tính toán.
+Một số bạn không tham gia các hoạt động được tính tiền phải chịu ít đi (tỉ lệ)
+
+

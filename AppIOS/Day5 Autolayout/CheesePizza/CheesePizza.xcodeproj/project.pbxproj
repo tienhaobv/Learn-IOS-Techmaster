@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2972984E2294BDB300A2100D /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2972984D2294BDB300A2100D /* StepView.swift */; };
+		29EE0E9A2293C7AD00EF72B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE0E992293C7AD00EF72B6 /* AppDelegate.swift */; };
+		29EE0EA12293C7AF00EF72B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EE0EA02293C7AF00EF72B6 /* Assets.xcassets */; };
+		29EE0EA42293C7AF00EF72B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EE0EA22293C7AF00EF72B6 /* LaunchScreen.storyboard */; };
+		29EE0EAD2293C84200EF72B6 /* ChessePizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE0EAC2293C84200EF72B6 /* ChessePizzaViewController.swift */; };
+		29EE0EB02293F9B100EF72B6 /* NamePizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE0EAF2293F9B100EF72B6 /* NamePizzaView.swift */; };
+		29EE0EB22293F9C000EF72B6 /* SizePizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE0EB12293F9C000EF72B6 /* SizePizzaView.swift */; };
+		29EE0EB42293F9D300EF72B6 /* QuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE0EB32293F9D300EF72B6 /* QuantityView.swift */; };
+		29EE0EB62293F9EA00EF72B6 /* StyleCakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE0EB52293F9EA00EF72B6 /* StyleCakeView.swift */; };
+		29EE0EB82293F9FD00EF72B6 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EE0EB72293F9FD00EF72B6 /* DescriptionView.swift */; };
+		85CD8C4EE471E606F8EFB6F7 /* Pods_CheesePizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15226CE3C86D67A7486653A9 /* Pods_CheesePizza.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15226CE3C86D67A7486653A9 /* Pods_CheesePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheesePizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2972984D2294BDB300A2100D /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		29EE0E962293C7AD00EF72B6 /* CheesePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheesePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29EE0E992293C7AD00EF72B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29EE0EA02293C7AF00EF72B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29EE0EA32293C7AF00EF72B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29EE0EA52293C7AF00EF72B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EE0EAC2293C84200EF72B6 /* ChessePizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessePizzaViewController.swift; sourceTree = "<group>"; };
+		29EE0EAF2293F9B100EF72B6 /* NamePizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePizzaView.swift; sourceTree = "<group>"; };
+		29EE0EB12293F9C000EF72B6 /* SizePizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePizzaView.swift; sourceTree = "<group>"; };
+		29EE0EB32293F9D300EF72B6 /* QuantityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityView.swift; sourceTree = "<group>"; };
+		29EE0EB52293F9EA00EF72B6 /* StyleCakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCakeView.swift; sourceTree = "<group>"; };
+		29EE0EB72293F9FD00EF72B6 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		4C4474DA2C5547FB5417861B /* Pods-CheesePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheesePizza.release.xcconfig"; path = "Target Support Files/Pods-CheesePizza/Pods-CheesePizza.release.xcconfig"; sourceTree = "<group>"; };
+		CAAA39B4B043F3F079F089F4 /* Pods-CheesePizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheesePizza.debug.xcconfig"; path = "Target Support Files/Pods-CheesePizza/Pods-CheesePizza.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29EE0E932293C7AD00EF72B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CD8C4EE471E606F8EFB6F7 /* Pods_CheesePizza.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29EE0E8D2293C7AD00EF72B6 = {
+			isa = PBXGroup;
+			children = (
+				29EE0E982293C7AD00EF72B6 /* CheesePizza */,
+				29EE0E972293C7AD00EF72B6 /* Products */,
+				A8778E55C5C068E53B20EF42 /* Pods */,
+				61A2BB081E1F4BB062B7CCCF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29EE0E972293C7AD00EF72B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29EE0E962293C7AD00EF72B6 /* CheesePizza.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29EE0E982293C7AD00EF72B6 /* CheesePizza */ = {
+			isa = PBXGroup;
+			children = (
+				29EE0EAB2293C82000EF72B6 /* Modules */,
+				29EE0E992293C7AD00EF72B6 /* AppDelegate.swift */,
+				29EE0EA02293C7AF00EF72B6 /* Assets.xcassets */,
+				29EE0EA22293C7AF00EF72B6 /* LaunchScreen.storyboard */,
+				29EE0EA52293C7AF00EF72B6 /* Info.plist */,
+			);
+			path = CheesePizza;
+			sourceTree = "<group>";
+		};
+		29EE0EAB2293C82000EF72B6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				29EE0EAE2293F98600EF72B6 /* DetailModules */,
+				29EE0EAC2293C84200EF72B6 /* ChessePizzaViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		29EE0EAE2293F98600EF72B6 /* DetailModules */ = {
+			isa = PBXGroup;
+			children = (
+				29EE0EAF2293F9B100EF72B6 /* NamePizzaView.swift */,
+				29EE0EB12293F9C000EF72B6 /* SizePizzaView.swift */,
+				29EE0EB32293F9D300EF72B6 /* QuantityView.swift */,
+				29EE0EB52293F9EA00EF72B6 /* StyleCakeView.swift */,
+				29EE0EB72293F9FD00EF72B6 /* DescriptionView.swift */,
+				2972984D2294BDB300A2100D /* StepView.swift */,
+			);
+			path = DetailModules;
+			sourceTree = "<group>";
+		};
+		61A2BB081E1F4BB062B7CCCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15226CE3C86D67A7486653A9 /* Pods_CheesePizza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8778E55C5C068E53B20EF42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAAA39B4B043F3F079F089F4 /* Pods-CheesePizza.debug.xcconfig */,
+				4C4474DA2C5547FB5417861B /* Pods-CheesePizza.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29EE0E952293C7AD00EF72B6 /* CheesePizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29EE0EA82293C7AF00EF72B6 /* Build configuration list for PBXNativeTarget "CheesePizza" */;
+			buildPhases = (
+				409F20127A7188AA3936B4A7 /* [CP] Check Pods Manifest.lock */,
+				29EE0E922293C7AD00EF72B6 /* Sources */,
+				29EE0E932293C7AD00EF72B6 /* Frameworks */,
+				29EE0E942293C7AD00EF72B6 /* Resources */,
+				B12557BA3EBCCCABF3B43CB9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheesePizza;
+			productName = CheesePizza;
+			productReference = 29EE0E962293C7AD00EF72B6 /* CheesePizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29EE0E8E2293C7AD00EF72B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tào Quỳnh";
+				TargetAttributes = {
+					29EE0E952293C7AD00EF72B6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 29EE0E912293C7AD00EF72B6 /* Build configuration list for PBXProject "CheesePizza" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29EE0E8D2293C7AD00EF72B6;
+			productRefGroup = 29EE0E972293C7AD00EF72B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29EE0E952293C7AD00EF72B6 /* CheesePizza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29EE0E942293C7AD00EF72B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29EE0EA42293C7AF00EF72B6 /* LaunchScreen.storyboard in Resources */,
+				29EE0EA12293C7AF00EF72B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		409F20127A7188AA3936B4A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheesePizza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B12557BA3EBCCCABF3B43CB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheesePizza/Pods-CheesePizza-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheesePizza/Pods-CheesePizza-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheesePizza/Pods-CheesePizza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29EE0E922293C7AD00EF72B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2972984E2294BDB300A2100D /* StepView.swift in Sources */,
+				29EE0EB62293F9EA00EF72B6 /* StyleCakeView.swift in Sources */,
+				29EE0EB82293F9FD00EF72B6 /* DescriptionView.swift in Sources */,
+				29EE0EAD2293C84200EF72B6 /* ChessePizzaViewController.swift in Sources */,
+				29EE0EB02293F9B100EF72B6 /* NamePizzaView.swift in Sources */,
+				29EE0EB22293F9C000EF72B6 /* SizePizzaView.swift in Sources */,
+				29EE0EB42293F9D300EF72B6 /* QuantityView.swift in Sources */,
+				29EE0E9A2293C7AD00EF72B6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29EE0EA22293C7AF00EF72B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29EE0EA32293C7AF00EF72B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29EE0EA62293C7AF00EF72B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29EE0EA72293C7AF00EF72B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29EE0EA92293C7AF00EF72B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAAA39B4B043F3F079F089F4 /* Pods-CheesePizza.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z872JX6928;
+				INFOPLIST_FILE = CheesePizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taoquynh.CheesePizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29EE0EAA2293C7AF00EF72B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4474DA2C5547FB5417861B /* Pods-CheesePizza.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z872JX6928;
+				INFOPLIST_FILE = CheesePizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.taoquynh.CheesePizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29EE0E912293C7AD00EF72B6 /* Build configuration list for PBXProject "CheesePizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EE0EA62293C7AF00EF72B6 /* Debug */,
+				29EE0EA72293C7AF00EF72B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29EE0EA82293C7AF00EF72B6 /* Build configuration list for PBXNativeTarget "CheesePizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EE0EA92293C7AF00EF72B6 /* Debug */,
+				29EE0EAA2293C7AF00EF72B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29EE0E8E2293C7AD00EF72B6 /* Project object */;
+}

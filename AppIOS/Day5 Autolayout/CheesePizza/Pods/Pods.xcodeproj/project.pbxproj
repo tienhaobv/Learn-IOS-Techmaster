@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B9901C934A7AD89649B744FC3C138D4 /* Stevia+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4DC72001D79165C6E25533FF772D12 /* Stevia+Center.swift */; };
+		185DBE84D0B3C113326CE375F2535B67 /* Stevia+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E344B0E8A76E697B7DE3038D3712119 /* Stevia+GetConstraint.swift */; };
+		19497A78DBA9D1754C20E4C3E1676B47 /* Stevia+LayoutAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB00B7AD8D6F2C62F01885195C4D92F /* Stevia+LayoutAnchors.swift */; };
+		2588128272EE9D9CB2982ACBEFCFDF9D /* Stevia+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D94E4B4CBE950BDD6A011648FBA001 /* Stevia+Fill.swift */; };
+		41A772612306F11BF902EA9040E672AA /* Stevia+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDDA1BB2AAC69FEE855EF3F27155CB5 /* Stevia+Style.swift */; };
+		494BA38D19A29A0F63376BA4E372BE73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		4D87D634D79EE2C510A37D0BAC4487D6 /* Stevia+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56596B08C906EF219B497C060DE6C040 /* Stevia+Percentage.swift */; };
+		5256D6637A66694CAD6A394DFB0475C9 /* Stevia+Baselines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528C23E31ACEF3FB6B93EBF3C383E0 /* Stevia+Baselines.swift */; };
+		55F04960D7446C864252247F6358BF1A /* Stevia+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8E93F55446BC39986D0E3AF690B98 /* Stevia+Alignment.swift */; };
+		652F7847A3FA617BAD9F52601FAFA343 /* Stevia+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98205B7122187D7B1A94F769CC37D9 /* Stevia+Content.swift */; };
+		658BFA253C87C14640FCD22510F6B1FB /* SteviaLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4757575C12812D24D760A6F7235AF8D2 /* SteviaLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7901CA29E579827C438BD0CECE0FCFC8 /* Stevia+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6280F717DDFD555B4AFE7D6E678F06D9 /* Stevia+Notifications.swift */; };
+		881213F03F64BFE6EED742E9B3991175 /* Stevia+FlexibleMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBDFEE5EFF4D0683A0DC2C62F1C3154 /* Stevia+FlexibleMargin.swift */; };
+		8FD1276687EE19F44ED800F3D16C3C8C /* Pods-CheesePizza-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76840F00927E0138338E8D160F6E1239 /* Pods-CheesePizza-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98A1874826073636D72C8B52D0C2BAB1 /* Stevia+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C573060E14455DFB9C906D6CDAF55198 /* Stevia+Hierarchy.swift */; };
+		9973D8518E11A53A52D1A3263A14F741 /* Stevia+Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4941A80D2F4C8A37602C49D0CEC4B /* Stevia+Stacks.swift */; };
+		9E0352944624DAB0D0DC6DF0FA6ACCB6 /* Pods-CheesePizza-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D4CAA16550A6697923C70A97CDEE40 /* Pods-CheesePizza-dummy.m */; };
+		A614611FB73EDE32DB1F4B3CE5B423E7 /* Stevia+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CB94F29151CC8DEF932E38C8044E7 /* Stevia+Constraints.swift */; };
+		A639AC15EFF65204ACA8F8E8BC878B41 /* SteviaLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6903C2FA245C55127203F8E3A67DF19 /* SteviaLayout-dummy.m */; };
+		A8ED268CE87D15DB5E203C76FD76E0D8 /* Stevia+DoubleDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6366113D0F736E3742F257791076655C /* Stevia+DoubleDash.swift */; };
+		AB0050707B9E082FADB8B6EAD3E5040E /* Stevia+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84284E1CC99D3947CC1234E950B1C707 /* Stevia+Position.swift */; };
+		BF62AC3A4ABB13036CEFE6B44B191190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		CF5CCA4E879AFD38D30F090C21A1B4F6 /* Stevia+Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9314D0794C36CC4B272425F63D85078A /* Stevia+Equation.swift */; };
+		D9B15DE7FAF7F107737B5069BF35053B /* Stevia+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975AF8CE12F73C64B719D7CA92277AE /* Stevia+Operators.swift */; };
+		DE7AE2C2728955E5A5BD55A1AA5C9981 /* Stevia+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F584687A1A973A4D06593EB8B55D13C /* Stevia+Size.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68C0F60F3BF7662F2CE1F6360019EF79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF263AB023E40C4315ED4A97C6D7829F;
+			remoteInfo = SteviaLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04EBC9AC838A2EE0A80C39571E05F35A /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Stevia.framework; path = SteviaLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E4941A80D2F4C8A37602C49D0CEC4B /* Stevia+Stacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Stacks.swift"; path = "Source/Stevia+Stacks.swift"; sourceTree = "<group>"; };
+		1F528C23E31ACEF3FB6B93EBF3C383E0 /* Stevia+Baselines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Baselines.swift"; path = "Source/Stevia+Baselines.swift"; sourceTree = "<group>"; };
+		1F584687A1A973A4D06593EB8B55D13C /* Stevia+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Size.swift"; path = "Source/Stevia+Size.swift"; sourceTree = "<group>"; };
+		22860AE593D5C38714900B0B8D593CD8 /* Pods-CheesePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheesePizza.release.xcconfig"; sourceTree = "<group>"; };
+		22958513018C713B6ECAF2601116A97B /* SteviaLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.xcconfig; sourceTree = "<group>"; };
+		2BC99E24E16EAC052B6DF39FAF728DF1 /* SteviaLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-prefix.pch"; sourceTree = "<group>"; };
+		2E65C545073CDB73CFC5FC8E9770683B /* Pods-CheesePizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CheesePizza.debug.xcconfig"; sourceTree = "<group>"; };
+		3BDDA1BB2AAC69FEE855EF3F27155CB5 /* Stevia+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Style.swift"; path = "Source/Stevia+Style.swift"; sourceTree = "<group>"; };
+		4757575C12812D24D760A6F7235AF8D2 /* SteviaLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-umbrella.h"; sourceTree = "<group>"; };
+		4E344B0E8A76E697B7DE3038D3712119 /* Stevia+GetConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+GetConstraint.swift"; path = "Source/Stevia+GetConstraint.swift"; sourceTree = "<group>"; };
+		56596B08C906EF219B497C060DE6C040 /* Stevia+Percentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Percentage.swift"; path = "Source/Stevia+Percentage.swift"; sourceTree = "<group>"; };
+		5F4DC72001D79165C6E25533FF772D12 /* Stevia+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Center.swift"; path = "Source/Stevia+Center.swift"; sourceTree = "<group>"; };
+		6280F717DDFD555B4AFE7D6E678F06D9 /* Stevia+Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Notifications.swift"; path = "Source/Stevia+Notifications.swift"; sourceTree = "<group>"; };
+		6366113D0F736E3742F257791076655C /* Stevia+DoubleDash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+DoubleDash.swift"; path = "Source/Stevia+DoubleDash.swift"; sourceTree = "<group>"; };
+		6975AF8CE12F73C64B719D7CA92277AE /* Stevia+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Operators.swift"; path = "Source/Stevia+Operators.swift"; sourceTree = "<group>"; };
+		69B8E93F55446BC39986D0E3AF690B98 /* Stevia+Alignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Alignment.swift"; path = "Source/Stevia+Alignment.swift"; sourceTree = "<group>"; };
+		6D56513E20A76E2DCBDBC459D81C144E /* Pods-CheesePizza-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheesePizza-Info.plist"; sourceTree = "<group>"; };
+		76840F00927E0138338E8D160F6E1239 /* Pods-CheesePizza-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CheesePizza-umbrella.h"; sourceTree = "<group>"; };
+		7DED30BBA7D49BCA98B97CE6564EE64C /* Pods_CheesePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CheesePizza.framework; path = "Pods-CheesePizza.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84284E1CC99D3947CC1234E950B1C707 /* Stevia+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Position.swift"; path = "Source/Stevia+Position.swift"; sourceTree = "<group>"; };
+		85A6F3905793CA7208EE779B1FB6D955 /* SteviaLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SteviaLayout-Info.plist"; sourceTree = "<group>"; };
+		903459C522C39C33FA4CE1CF34CFB560 /* Pods-CheesePizza-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CheesePizza-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9314D0794C36CC4B272425F63D85078A /* Stevia+Equation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Equation.swift"; path = "Source/Stevia+Equation.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B6903C2FA245C55127203F8E3A67DF19 /* SteviaLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SteviaLayout-dummy.m"; sourceTree = "<group>"; };
+		BDBDFEE5EFF4D0683A0DC2C62F1C3154 /* Stevia+FlexibleMargin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+FlexibleMargin.swift"; path = "Source/Stevia+FlexibleMargin.swift"; sourceTree = "<group>"; };
+		C275EA4A6D70CFF1DC72AB9E6AC9F68D /* Pods-CheesePizza-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CheesePizza-acknowledgements.plist"; sourceTree = "<group>"; };
+		C573060E14455DFB9C906D6CDAF55198 /* Stevia+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Hierarchy.swift"; path = "Source/Stevia+Hierarchy.swift"; sourceTree = "<group>"; };
+		C7D4CAA16550A6697923C70A97CDEE40 /* Pods-CheesePizza-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CheesePizza-dummy.m"; sourceTree = "<group>"; };
+		CA59F6E28D4857BBD996B45754A32A4F /* Pods-CheesePizza.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CheesePizza.modulemap"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DEB00B7AD8D6F2C62F01885195C4D92F /* Stevia+LayoutAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+LayoutAnchors.swift"; path = "Source/Stevia+LayoutAnchors.swift"; sourceTree = "<group>"; };
+		E32CB94F29151CC8DEF932E38C8044E7 /* Stevia+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Constraints.swift"; path = "Source/Stevia+Constraints.swift"; sourceTree = "<group>"; };
+		E4D94E4B4CBE950BDD6A011648FBA001 /* Stevia+Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Fill.swift"; path = "Source/Stevia+Fill.swift"; sourceTree = "<group>"; };
+		EE98205B7122187D7B1A94F769CC37D9 /* Stevia+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Content.swift"; path = "Source/Stevia+Content.swift"; sourceTree = "<group>"; };
+		F00D885B5509EEF523A2A7621E7F1998 /* SteviaLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SteviaLayout.modulemap; sourceTree = "<group>"; };
+		F297B0DB8B606305395DC5CC3C3492F0 /* Pods-CheesePizza-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CheesePizza-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A0217FF30B188CA7C320AD44218B2E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF62AC3A4ABB13036CEFE6B44B191190 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602F880BC24A5A4CF37C730523802260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494BA38D19A29A0F63376BA4E372BE73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066D9D8FE1B0B1F7BF40E4F340E92A1B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59DE6F550C4094412DE211BF871EF38E /* Pods-CheesePizza */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		09B45E86BC7590AB64FD3FF3A80A831E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DED30BBA7D49BCA98B97CE6564EE64C /* Pods_CheesePizza.framework */,
+				04EBC9AC838A2EE0A80C39571E05F35A /* Stevia.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DE6F550C4094412DE211BF871EF38E /* Pods-CheesePizza */ = {
+			isa = PBXGroup;
+			children = (
+				CA59F6E28D4857BBD996B45754A32A4F /* Pods-CheesePizza.modulemap */,
+				903459C522C39C33FA4CE1CF34CFB560 /* Pods-CheesePizza-acknowledgements.markdown */,
+				C275EA4A6D70CFF1DC72AB9E6AC9F68D /* Pods-CheesePizza-acknowledgements.plist */,
+				C7D4CAA16550A6697923C70A97CDEE40 /* Pods-CheesePizza-dummy.m */,
+				F297B0DB8B606305395DC5CC3C3492F0 /* Pods-CheesePizza-frameworks.sh */,
+				6D56513E20A76E2DCBDBC459D81C144E /* Pods-CheesePizza-Info.plist */,
+				76840F00927E0138338E8D160F6E1239 /* Pods-CheesePizza-umbrella.h */,
+				2E65C545073CDB73CFC5FC8E9770683B /* Pods-CheesePizza.debug.xcconfig */,
+				22860AE593D5C38714900B0B8D593CD8 /* Pods-CheesePizza.release.xcconfig */,
+			);
+			name = "Pods-CheesePizza";
+			path = "Target Support Files/Pods-CheesePizza";
+			sourceTree = "<group>";
+		};
+		66FDEA45EA76122CF95E38D812B2F419 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F00D885B5509EEF523A2A7621E7F1998 /* SteviaLayout.modulemap */,
+				22958513018C713B6ECAF2601116A97B /* SteviaLayout.xcconfig */,
+				B6903C2FA245C55127203F8E3A67DF19 /* SteviaLayout-dummy.m */,
+				85A6F3905793CA7208EE779B1FB6D955 /* SteviaLayout-Info.plist */,
+				2BC99E24E16EAC052B6DF39FAF728DF1 /* SteviaLayout-prefix.pch */,
+				4757575C12812D24D760A6F7235AF8D2 /* SteviaLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SteviaLayout";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A5332611BF5A0E2FA9A8D79283D0840A /* SteviaLayout */ = {
+			isa = PBXGroup;
+			children = (
+				69B8E93F55446BC39986D0E3AF690B98 /* Stevia+Alignment.swift */,
+				1F528C23E31ACEF3FB6B93EBF3C383E0 /* Stevia+Baselines.swift */,
+				5F4DC72001D79165C6E25533FF772D12 /* Stevia+Center.swift */,
+				E32CB94F29151CC8DEF932E38C8044E7 /* Stevia+Constraints.swift */,
+				EE98205B7122187D7B1A94F769CC37D9 /* Stevia+Content.swift */,
+				6366113D0F736E3742F257791076655C /* Stevia+DoubleDash.swift */,
+				9314D0794C36CC4B272425F63D85078A /* Stevia+Equation.swift */,
+				E4D94E4B4CBE950BDD6A011648FBA001 /* Stevia+Fill.swift */,
+				BDBDFEE5EFF4D0683A0DC2C62F1C3154 /* Stevia+FlexibleMargin.swift */,
+				4E344B0E8A76E697B7DE3038D3712119 /* Stevia+GetConstraint.swift */,
+				C573060E14455DFB9C906D6CDAF55198 /* Stevia+Hierarchy.swift */,
+				DEB00B7AD8D6F2C62F01885195C4D92F /* Stevia+LayoutAnchors.swift */,
+				6280F717DDFD555B4AFE7D6E678F06D9 /* Stevia+Notifications.swift */,
+				6975AF8CE12F73C64B719D7CA92277AE /* Stevia+Operators.swift */,
+				56596B08C906EF219B497C060DE6C040 /* Stevia+Percentage.swift */,
+				84284E1CC99D3947CC1234E950B1C707 /* Stevia+Position.swift */,
+				1F584687A1A973A4D06593EB8B55D13C /* Stevia+Size.swift */,
+				15E4941A80D2F4C8A37602C49D0CEC4B /* Stevia+Stacks.swift */,
+				3BDDA1BB2AAC69FEE855EF3F27155CB5 /* Stevia+Style.swift */,
+				66FDEA45EA76122CF95E38D812B2F419 /* Support Files */,
+			);
+			name = SteviaLayout;
+			path = SteviaLayout;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D0084CFB2A907B8F5ECF2535A2C13978 /* Pods */,
+				09B45E86BC7590AB64FD3FF3A80A831E /* Products */,
+				066D9D8FE1B0B1F7BF40E4F340E92A1B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0084CFB2A907B8F5ECF2535A2C13978 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5332611BF5A0E2FA9A8D79283D0840A /* SteviaLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01F6F870A32FBE2BBC9EFED751E5B988 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658BFA253C87C14640FCD22510F6B1FB /* SteviaLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C20252F7131A8D8DF96A257C1BF7A759 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD1276687EE19F44ED800F3D16C3C8C /* Pods-CheesePizza-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4522819B274DBF84965035408AF1D0DB /* Pods-CheesePizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB98130409E786996EEFD2A7C313088 /* Build configuration list for PBXNativeTarget "Pods-CheesePizza" */;
+			buildPhases = (
+				C20252F7131A8D8DF96A257C1BF7A759 /* Headers */,
+				D20C865E4BF319B7FC011A4433D6BA5F /* Sources */,
+				602F880BC24A5A4CF37C730523802260 /* Frameworks */,
+				102146177F92E983743BA8556B507FC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05458FED98F603E0A1B5324F7FAE1879 /* PBXTargetDependency */,
+			);
+			name = "Pods-CheesePizza";
+			productName = "Pods-CheesePizza";
+			productReference = 7DED30BBA7D49BCA98B97CE6564EE64C /* Pods_CheesePizza.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57679864F776E110E5DC89BF02C12EEF /* Build configuration list for PBXNativeTarget "SteviaLayout" */;
+			buildPhases = (
+				01F6F870A32FBE2BBC9EFED751E5B988 /* Headers */,
+				101D89C513438ABC233DED0B1AD3EBCA /* Sources */,
+				5A0217FF30B188CA7C320AD44218B2E4 /* Frameworks */,
+				1AA8497F90CD2987F8C377EFA44BD8B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteviaLayout;
+			productName = SteviaLayout;
+			productReference = 04EBC9AC838A2EE0A80C39571E05F35A /* Stevia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 09B45E86BC7590AB64FD3FF3A80A831E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4522819B274DBF84965035408AF1D0DB /* Pods-CheesePizza */,
+				CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		102146177F92E983743BA8556B507FC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA8497F90CD2987F8C377EFA44BD8B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		101D89C513438ABC233DED0B1AD3EBCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F04960D7446C864252247F6358BF1A /* Stevia+Alignment.swift in Sources */,
+				5256D6637A66694CAD6A394DFB0475C9 /* Stevia+Baselines.swift in Sources */,
+				0B9901C934A7AD89649B744FC3C138D4 /* Stevia+Center.swift in Sources */,
+				A614611FB73EDE32DB1F4B3CE5B423E7 /* Stevia+Constraints.swift in Sources */,
+				652F7847A3FA617BAD9F52601FAFA343 /* Stevia+Content.swift in Sources */,
+				A8ED268CE87D15DB5E203C76FD76E0D8 /* Stevia+DoubleDash.swift in Sources */,
+				CF5CCA4E879AFD38D30F090C21A1B4F6 /* Stevia+Equation.swift in Sources */,
+				2588128272EE9D9CB2982ACBEFCFDF9D /* Stevia+Fill.swift in Sources */,
+				881213F03F64BFE6EED742E9B3991175 /* Stevia+FlexibleMargin.swift in Sources */,
+				185DBE84D0B3C113326CE375F2535B67 /* Stevia+GetConstraint.swift in Sources */,
+				98A1874826073636D72C8B52D0C2BAB1 /* Stevia+Hierarchy.swift in Sources */,
+				19497A78DBA9D1754C20E4C3E1676B47 /* Stevia+LayoutAnchors.swift in Sources */,
+				7901CA29E579827C438BD0CECE0FCFC8 /* Stevia+Notifications.swift in Sources */,
+				D9B15DE7FAF7F107737B5069BF35053B /* Stevia+Operators.swift in Sources */,
+				4D87D634D79EE2C510A37D0BAC4487D6 /* Stevia+Percentage.swift in Sources */,
+				AB0050707B9E082FADB8B6EAD3E5040E /* Stevia+Position.swift in Sources */,
+				DE7AE2C2728955E5A5BD55A1AA5C9981 /* Stevia+Size.swift in Sources */,
+				9973D8518E11A53A52D1A3263A14F741 /* Stevia+Stacks.swift in Sources */,
+				41A772612306F11BF902EA9040E672AA /* Stevia+Style.swift in Sources */,
+				A639AC15EFF65204ACA8F8E8BC878B41 /* SteviaLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20C865E4BF319B7FC011A4433D6BA5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0352944624DAB0D0DC6DF0FA6ACCB6 /* Pods-CheesePizza-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05458FED98F603E0A1B5324F7FAE1879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SteviaLayout;
+			target = CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */;
+			targetProxy = 68C0F60F3BF7662F2CE1F6360019EF79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00C2FB9DDD0431520FB2FD6CF7849168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22860AE593D5C38714900B0B8D593CD8 /* Pods-CheesePizza.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CheesePizza/Pods-CheesePizza-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CheesePizza/Pods-CheesePizza.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FCE75E6612F38B6C5443FBC930775D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22958513018C713B6ECAF2601116A97B /* SteviaLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SteviaLayout/SteviaLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SteviaLayout/SteviaLayout.modulemap";
+				PRODUCT_MODULE_NAME = Stevia;
+				PRODUCT_NAME = Stevia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AEC0FD8311D0F15CDEDD8F51CBF8E3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E65C545073CDB73CFC5FC8E9770683B /* Pods-CheesePizza.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CheesePizza/Pods-CheesePizza-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CheesePizza/Pods-CheesePizza.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F8FC820722A5B4976B2D7E64AA1F541F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22958513018C713B6ECAF2601116A97B /* SteviaLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SteviaLayout/SteviaLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SteviaLayout/SteviaLayout.modulemap";
+				PRODUCT_MODULE_NAME = Stevia;
+				PRODUCT_NAME = Stevia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57679864F776E110E5DC89BF02C12EEF /* Build configuration list for PBXNativeTarget "SteviaLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8FC820722A5B4976B2D7E64AA1F541F /* Debug */,
+				1FCE75E6612F38B6C5443FBC930775D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EB98130409E786996EEFD2A7C313088 /* Build configuration list for PBXNativeTarget "Pods-CheesePizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC0FD8311D0F15CDEDD8F51CBF8E3DB /* Debug */,
+				00C2FB9DDD0431520FB2FD6CF7849168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
