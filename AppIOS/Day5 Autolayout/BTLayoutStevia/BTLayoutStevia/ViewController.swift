@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     var myView1 : UIView = UIView()
     var myView2 : UIView = UIView()
     var myView3 : UIView = UIView()
-    var lblv00 : UILabel = UILabel()
-    var lblv01 : UILabel = UILabel()
+    var lblv00 : UILabel = UILabel().text("Hithere!")
+    var lblv01 : UILabel = UILabel().text("Thanks for downloading!")
     var lblv10 : UILabel = UILabel()
     var lblv11 : UILabel = UILabel()
     var lblv12 : UILabel = UILabel()
@@ -39,14 +39,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.backgroundColor = UIColor.lightGray
+        view.backgroundColor = #colorLiteral(red: 1, green: 0.3254901961, blue: 0.2196078431, alpha: 0.799604024)
         view.sv(
             myView.sv(
                 lblv00,
                 lblv01
             ),
             myView1.sv(
-                lblv10,
+                lblv10.font(lblv00),
                 lblv11,
                 lblv12,
                 uiImage10,
@@ -68,6 +68,13 @@ class ViewController: UIViewController {
                 lblv31
             )
         )
+        
+        lblv00.font = UIFont(name: "SF", size: <#T##CGFloat#>)
+    }
+    
+    func lblStyle(l: UILabel) {
+        l.font = UIFont(name: "<#T##String#>", size: <#T##CGFloat#>)
+        l.font =
     }
 
 

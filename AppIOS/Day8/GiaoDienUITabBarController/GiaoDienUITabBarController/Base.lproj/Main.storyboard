@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ee6-za-W8c">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GiaoDienUITabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.84869748850000004" blue="0.85843168579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="chat-blue" id="mdU-z9-790"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Danh bạ-->
+        <scene sceneID="2Yp-0U-dOe">
+            <objects>
+                <viewController id="UBl-Ov-pDF" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="0Ft-cL-I2T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.31302615579999998" blue="0.6270250101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5mH-bD-4R8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Danh bạ" image="contacts-blue" id="BKi-TK-rbb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDr-De-EF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-528" y="867"/>
+        </scene>
+        <!--Nhật ký-->
+        <scene sceneID="W3g-n5-f1y">
+            <objects>
+                <viewController id="Til-qq-ppQ" sceneMemberID="viewController">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="Y2A-j1-9s8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94811556990000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="o5M-Xl-iuK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Nhật ký" image="watch-blue" id="Por-6D-x7c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Dn-9m-SYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="867"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Dvq-UC-RC1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ee6-za-W8c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UG4-cY-Psb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="v7g-ai-7BS"/>
+                        <segue destination="Til-qq-ppQ" kind="relationship" relationship="viewControllers" id="8UR-SL-rQF"/>
+                        <segue destination="UBl-Ov-pDF" kind="relationship" relationship="viewControllers" id="Wiz-I0-1Ew"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVM-St-jlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat-blue" width="24" height="24"/>
+        <image name="contacts-blue" width="24" height="24"/>
+        <image name="watch-blue" width="26" height="26"/>
+    </resources>
+</document>

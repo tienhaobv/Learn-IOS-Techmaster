@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,6 +51,7 @@
 		2A04DF4723025A4100280101 = {
 			isa = PBXGroup;
 			children = (
+				2AF3D0C7230E39ED00F32174 /* Font */,
 				2A04DF5223025A4100280101 /* BTLayoutStevia */,
 				2A04DF5123025A4100280101 /* Products */,
 				F950106487133CB5CC754489 /* Pods */,
@@ -79,13 +80,19 @@
 			path = BTLayoutStevia;
 			sourceTree = "<group>";
 		};
+		2AF3D0C7230E39ED00F32174 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		F950106487133CB5CC754489 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				CD97324C65FB61E4636BBE91 /* Pods-BTLayoutStevia.debug.xcconfig */,
 				86446FCE6165106DC6979DB2 /* Pods-BTLayoutStevia.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
