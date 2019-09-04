@@ -1,0 +1,6 @@
+framework module Pods_ZaloClone {
+  umbrella header "Pods-ZaloClone-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,6 +12,7 @@
 		2AF3F81123165F1D00E45A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF3F80F23165F1D00E45A67 /* Main.storyboard */; };
 		2AF3F81323165F1E00E45A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF3F81223165F1E00E45A67 /* Assets.xcassets */; };
 		2AF3F81623165F1E00E45A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF3F81423165F1E00E45A67 /* LaunchScreen.storyboard */; };
+		2D1516BE257BEDB1A571B95D /* Pods_BTTinhTienDien.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D14BAA7D7903E2A9DB67E70 /* Pods_BTTinhTienDien.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2AF3F81223165F1E00E45A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AF3F81523165F1E00E45A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AF3F81723165F1E00E45A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D14BAA7D7903E2A9DB67E70 /* Pods_BTTinhTienDien.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTTinhTienDien.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D8F60BD608C0C6A1F9E763 /* Pods-BTTinhTienDien.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTTinhTienDien.debug.xcconfig"; path = "Target Support Files/Pods-BTTinhTienDien/Pods-BTTinhTienDien.debug.xcconfig"; sourceTree = "<group>"; };
+		E8B25131D1762FB69F6E2616 /* Pods-BTTinhTienDien.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTTinhTienDien.release.xcconfig"; path = "Target Support Files/Pods-BTTinhTienDien/Pods-BTTinhTienDien.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1516BE257BEDB1A571B95D /* Pods_BTTinhTienDien.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0524DA4F9070C8BA109D093E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D14BAA7D7903E2A9DB67E70 /* Pods_BTTinhTienDien.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2AF3F7FF23165F1D00E45A67 = {
 			isa = PBXGroup;
 			children = (
 				2AF3F80A23165F1D00E45A67 /* BTTinhTienDien */,
 				2AF3F80923165F1D00E45A67 /* Products */,
+				7CE76ABA4F88C68C853922F1 /* Pods */,
+				0524DA4F9070C8BA109D093E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = BTTinhTienDien;
 			sourceTree = "<group>";
 		};
+		7CE76ABA4F88C68C853922F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59D8F60BD608C0C6A1F9E763 /* Pods-BTTinhTienDien.debug.xcconfig */,
+				E8B25131D1762FB69F6E2616 /* Pods-BTTinhTienDien.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AF3F81A23165F1E00E45A67 /* Build configuration list for PBXNativeTarget "BTTinhTienDien" */;
 			buildPhases = (
+				76C6B649F26AB50DF79A091B /* [CP] Check Pods Manifest.lock */,
 				2AF3F80423165F1D00E45A67 /* Sources */,
 				2AF3F80523165F1D00E45A67 /* Frameworks */,
 				2AF3F80623165F1D00E45A67 /* Resources */,
+				527FB0C882FBE63D2979CB32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		527FB0C882FBE63D2979CB32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTTinhTienDien/Pods-BTTinhTienDien-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BTTinhTienDien/Pods-BTTinhTienDien-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BTTinhTienDien/Pods-BTTinhTienDien-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C6B649F26AB50DF79A091B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BTTinhTienDien-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2AF3F80423165F1D00E45A67 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		2AF3F81B23165F1E00E45A67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D8F60BD608C0C6A1F9E763 /* Pods-BTTinhTienDien.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		2AF3F81C23165F1E00E45A67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B25131D1762FB69F6E2616 /* Pods-BTTinhTienDien.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
