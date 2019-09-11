@@ -17,8 +17,9 @@ class MainViewController: UIViewController {
         layout.scrollDirection = .horizontal
         // khởi tạo collectionview và chuyền vào layout
         let collectionView = UICollectionView (frame: CGRect.zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .green
+        collectionView.backgroundColor = .white
         collectionView.register(HorizontalCollectionViewCell.self, forCellWithReuseIdentifier: "cellHorizontal")
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
         
 //        // thay đổi hướng scroll của collectionView
 //        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -35,8 +36,9 @@ class MainViewController: UIViewController {
         layout.scrollDirection = .vertical
         // khởi tạo collectionview và chuyền vào layout
         let collectionView = UICollectionView (frame: CGRect.zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .blue
+        collectionView.backgroundColor = .white
         collectionView.register(VerticalCollectionViewCell.self, forCellWithReuseIdentifier: "cellVertical")
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
         
 //        // thay đổi hướng scroll của collectionView
 //        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -55,7 +57,7 @@ class MainViewController: UIViewController {
         collectionViewHorizontal.delegate = self
         collectionViewVertical.dataSource = self
         collectionViewVertical.delegate = self
-        view.backgroundColor = .purple
+        view.backgroundColor = .white
         setupLayout()
     }
     
@@ -95,11 +97,17 @@ class MainViewController: UIViewController {
 //        btnSearch.widthAnchor.constraint(equalToConstant: 35)
 //
         view.addSubview(collectionViewHorizontal)
+        view.addSubview(collectionViewVertical)
 //        collectionViewHorizontal.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        collectionViewHorizontal.topAnchor.constraint(equalTo: view.topAnchor, constant: 20)
-        collectionViewHorizontal.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10)
-        collectionViewHorizontal.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 10)
-        collectionViewHorizontal.heightAnchor.constraint(equalToConstant: 100)
+        collectionViewHorizontal.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
+        collectionViewHorizontal.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
+        collectionViewHorizontal.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
+        collectionViewHorizontal.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        
+        collectionViewVertical.topAnchor.constraint(equalTo: collectionViewHorizontal.bottomAnchor, constant: 20).isActive = true
+        collectionViewVertical.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
+        collectionViewVertical.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
+        collectionViewVertical.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
     }
     
 
@@ -135,16 +143,19 @@ extension MainViewController:  UICollectionViewDelegate, UICollectionViewDataSou
         }
     }
     
-    // hàm trả về kích thước của item
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        // tính kích thước size một cạnh của item
-//        let size = ((collectionView.frame.size.width - 1) / 2)
-//        return CGSize(width: size, height: size)
-//    }
+    //hàm trả về kích thước của item
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // tính kích thước size một cạnh của item
+        if collectionView == self.collectionViewHorizontal {
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        }else {
+            return CGSize(width: (collectionView.frame.width - 10) / 2, height: 200)
+        }
+    }
     
     // hàm trả về khoảng cách giữa hai hàng
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 20
     }
     
     // hàm trả về khoảng cách giữa 2 item (tương tự 2 cột)

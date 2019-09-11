@@ -12,6 +12,7 @@
 		2A04DF5923025A4100280101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A04DF5723025A4100280101 /* Main.storyboard */; };
 		2A04DF5B23025A4100280101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A04DF5A23025A4100280101 /* Assets.xcassets */; };
 		2A04DF5E23025A4100280101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A04DF5C23025A4100280101 /* LaunchScreen.storyboard */; };
+		2AF90DD5232656F800AD2B5C /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF90DD4232656F800AD2B5C /* DonateViewController.swift */; };
 		32554C014471F14F72BE9B69 /* Pods_BTLayoutStevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030DB676035EAAB52FAFD0E /* Pods_BTLayoutStevia.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		2AF396E123178CE6006472C6 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = SOURCE_ROOT; };
 		2AF396E223178CE6006472C6 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = SOURCE_ROOT; };
 		2AF396E323178CE6006472C6 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = SOURCE_ROOT; };
+		2AF90DD4232656F800AD2B5C /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		86446FCE6165106DC6979DB2 /* Pods-BTLayoutStevia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTLayoutStevia.release.xcconfig"; path = "Target Support Files/Pods-BTLayoutStevia/Pods-BTLayoutStevia.release.xcconfig"; sourceTree = "<group>"; };
 		CD97324C65FB61E4636BBE91 /* Pods-BTLayoutStevia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTLayoutStevia.debug.xcconfig"; path = "Target Support Files/Pods-BTLayoutStevia/Pods-BTLayoutStevia.debug.xcconfig"; sourceTree = "<group>"; };
 		D030DB676035EAAB52FAFD0E /* Pods_BTLayoutStevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTLayoutStevia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 				2A04DF5A23025A4100280101 /* Assets.xcassets */,
 				2A04DF5C23025A4100280101 /* LaunchScreen.storyboard */,
 				2A04DF5F23025A4100280101 /* Info.plist */,
+				2AF90DD4232656F800AD2B5C /* DonateViewController.swift */,
 			);
 			path = BTLayoutStevia;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A04DF5623025A4100280101 /* ViewController.swift in Sources */,
+				2AF90DD5232656F800AD2B5C /* DonateViewController.swift in Sources */,
 				2A04DF5423025A4100280101 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

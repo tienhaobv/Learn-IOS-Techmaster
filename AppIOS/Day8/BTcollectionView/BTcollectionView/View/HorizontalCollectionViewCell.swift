@@ -58,12 +58,15 @@ class HorizontalCollectionViewCell: UICollectionViewCell {
     func setupLayout(){
         addSubview(containerView)
         containerView.addSubview(photoImageView)
+        containerView.addSubview(authorLabel)
         containerView.addSubview(titleLabel)
         
-        containerView.topAnchor.constraint(equalTo: topAnchor, constant: 4).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4).isActive = true
-        containerView.leftAnchor.constraint(equalTo: leftAnchor, constant: 4).isActive = true
-        containerView.rightAnchor.constraint(equalTo: rightAnchor, constant: -4).isActive = true
+        containerView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+//        containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4).isActive = true
+        containerView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        containerView.widthAnchor.constraint(equalToConstant: 400).isActive = true
+//        containerView.rightAnchor.constraint(equalTo: rightAnchor, constant: -4).isActive = true
         
         photoImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 0).isActive = true
         photoImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 0).isActive = true
