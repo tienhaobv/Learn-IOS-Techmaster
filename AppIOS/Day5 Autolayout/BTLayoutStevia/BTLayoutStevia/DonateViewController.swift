@@ -38,7 +38,7 @@ class DonateViewController: UIViewController {
     
     var price25 : UIButton = {
         let btn = UIButton()
-        btn.backgroundColor = UIColor.orange
+        btn.backgroundColor = UIColor(red:1.00, green:0.74, blue:0.09, alpha:1.0)
         btn.layer.cornerRadius = 5
         btn.text("$25")
         btn.setTitleColor(UIColor.white, for: .normal)
@@ -48,7 +48,7 @@ class DonateViewController: UIViewController {
     var price50 : UIButton = {
         let btn = UIButton()
         btn.text("$50")
-        btn.backgroundColor = UIColor.orange
+        btn.backgroundColor = UIColor(red:1.00, green:0.33, blue:0.22, alpha:1.0)
         btn.layer.cornerRadius = 5
         btn.setTitleColor(UIColor.white, for: .normal)
         return btn
@@ -57,7 +57,7 @@ class DonateViewController: UIViewController {
     var price100 : UIButton = {
         let btn = UIButton()
         btn.text("$100")
-        btn.backgroundColor = UIColor.orange
+        btn.backgroundColor = UIColor(red:1.00, green:0.74, blue:0.09, alpha:1.0)
         btn.layer.cornerRadius = 5
         btn.setTitleColor(UIColor.white, for: .normal)
         return btn
@@ -68,9 +68,9 @@ class DonateViewController: UIViewController {
         btn.backgroundColor = UIColor.white
         btn.layer.cornerRadius = 5
         btn.layer.borderWidth = 1
-        btn.layer.borderColor = UIColor.orange.cgColor
+        btn.layer.borderColor = UIColor(red:1.00, green:0.74, blue:0.09, alpha:1.0).cgColor
         btn.text("Other amount")
-        btn.setTitleColor(UIColor.orange, for: .normal)
+        btn.setTitleColor(UIColor(red:1.00, green:0.74, blue:0.09, alpha:1.0), for: .normal)
         return btn
     }()
     
@@ -88,7 +88,7 @@ class DonateViewController: UIViewController {
     
     var btnDonate : UIButton = {
         let btn = UIButton()
-        btn.backgroundColor = UIColor.red
+        btn.backgroundColor = UIColor(red:1.00, green:0.33, blue:0.22, alpha:1.0)
         btn.layer.cornerRadius = 5
         btn.text("Donate $25")
         btn.setTitleColor(UIColor.white, for: .normal)
