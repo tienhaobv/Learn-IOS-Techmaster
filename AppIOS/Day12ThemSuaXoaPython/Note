@@ -1,0 +1,43 @@
+# Bước 5: bổ xung GET /user trả về user cụ thể ứng với id người dùng truyền lên
+@app.route("/user")
+async def get_an_user_by_id(request):
+    index = request.form.get("id")
+    return response.json(users.get_an_user(index))
+
+
+# Bước 7A
+@app.route("/user", methods=['POST'])
+async def add_a_new_user(request):
+    new_user = {
+        "name": request.form.get("name"),
+        "email": request.form.get("email"),
+        "password": request.form.get("password"),
+    }
+    new_id = users.create_a_new_user(new_user)
+
+    return response.json(new_id)
+
+
+# Bước 8: Xóa
+@app.route("/user", methods=['DELETE'])
+async def delete_an_user(request):
+    index = request.form.get("id")
+    return response.json(users.delete_an_user(index))
+
+
+# Bước 9: Cập nhật
+@app.route("/user", methods=["PUT"])
+async def update_an_user(request):
+    return response.json(users.update_an_user(request.form))
+
+
+'''
+Client có thể gửi request lên dưới mấy dạng:
+- form-data: phía server sẽ dùng request.form để lấy dữ liệu
+- x-www-url-encode: phía server có thể dùng request.form hoặc request.body
+- raw + json: phía server phải dùng request.body
+https://stackoverflow.com/questions/26723467/what-is-the-difference-between-form-data-x-www-form-urlencoded-and-raw-in-the-p
+'''
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000)

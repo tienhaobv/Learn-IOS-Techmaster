@@ -21,7 +21,7 @@ class CellTable: UITableViewCell {
         didSet {
             if let ans = answer {
                 lblDescripsion.text = ans.answer
-//                btnSelect.textInputContextIdentifier = String(ans.isSelect)
+                btnSelect.setImage(UIImage(named: ans.isSelect ? "ic_circle" : "ic_done"), for: .normal)
             }
         }
     }
@@ -37,7 +37,7 @@ class CellTable: UITableViewCell {
         // Configure the view for the selected state
     }
     @IBAction func btnClick(_ sender: Any) {
-        
+        print("Tap button")
         strat?()
     }
     
